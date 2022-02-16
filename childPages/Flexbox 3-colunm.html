@@ -13,15 +13,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <style> div {border: thin dotted red;} </style>
+    <style>
+     div {border: thin dotted red;}
+     * { box-sizing: border-box;}
+     .header {
+       border: 1px solid red;
+       padding: 15px;
+     }
+     .menu {
+       width: 25%;
+       float: left;
+       padding: 15px;
+       border: 1px solid red;
+     }
+     .main {
+       width: 50%;
+       float: left;
+       padding: 15px;
+       border: 1px solid red;
+     }
+     .aside {
+       width: 25%;
+       float: left;
+       padding: 15px;
+       border: 1px solid red;
+     }
+     .footer {
+       border: 1px solid green;
+       padding: 15px;
+     }
+    </style>
 
 
   </head>
   <body>
-     <header>FlexBox: INDEX as Flexbox </header>
-     <nav><h3>Navigation with no viewport in h3</h3></nav>
-     <aside><p>This is the aside space witth no view port in a p-tag</p></aside>
-     <section> <h3 style="font-size:2.5vw" >Section 1</h3>
+     <header class="header">FlexBox: INDEX as Flexbox </header>
+     <nav class="menu"><h3>Navigation with no viewport in h3</h3></nav>
+     <aside class="aside"><p>This is the aside space witth no view port in a p-tag</p></aside>
+     <section class="main"> <h3 style="font-size:2.5vw" >Section 1</h3>
        <article>
          <p style="font-size:1vw">Here are hyperlinks to the mandatory Experiement Pages: </p>
          <!--  See the HTML .txt document for a summary -->
@@ -38,11 +67,11 @@
          </ol>
        </article>
      </section>
-     <section>
+     <section class="main">
        Section 2
      </section>
     <body>
-  <footer>
+  <footer class="footer">
      <blockquote cite="https://readbeach.com/quote/the-more-you-let-go-the-higher-you-rise">
        <!-- Date Access 20220208-->
      </blockquote>
