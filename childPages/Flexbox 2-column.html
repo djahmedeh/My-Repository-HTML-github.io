@@ -13,13 +13,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <style> div {border: thin dotted red;} </style>
+    <style> div {border: thin dotted red;}
+      div {border: thin dotted red;}
+     * { box-sizing: border-box;}
+     .header {
+       border: 1px solid red;
+       padding: 15px;
+     }
+     .menu {
+       width: 25%;
+       float: left;
+       padding: 15px;
+       border: 1px solid red;
+     }
+     .main {
+       width: 75%;
+       float: left;
+       padding: 15px;
+       border: 1px solid red
+     }
+    </style>
 
 
   </head>
   <body>
-     <div>Hello World</div
-     <header>Template Page</header>
+    <header>Flexbox: INDEX as a Flexbox</header>
     <nav></nav>
     <aside></aside>
     <section><article></article></section>
